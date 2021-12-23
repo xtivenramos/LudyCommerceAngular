@@ -1,0 +1,77 @@
+<!-- <p-toast></p-toast>
+
+<p-table
+  [value]="contrats"
+  styleClass="p-datatable-gridlines"
+  [paginator]="true" [rows]="5"
+  [showCurrentPageReport]="true"
+  responsiveLayout="scroll"
+  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+  [rowsPerPageOptions]="[5,10,15]"
+  [globalFilterFields]="['contid','clprid']"
+  selectionMode="single"
+  [(selection)]="selectedContrat"
+  dataKey="contid"
+  [loading]="loading"
+  [resizableColumns]="true"
+  columnResizeMode="expand"
+>
+  <ng-template pTemplate="caption">
+    <div class="p-d-flex p-ai-center p-jc-between">
+        Products
+        <p-button icon="pi pi-refresh" (click)="getContratos()"></p-button>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Contid <p-columnFilter type="text" field="contid" display="menu"></p-columnFilter></th>
+      <th pResizableColumn>clprid</th>
+      <th pResizableColumn>clientec</th>
+      <th pResizableColumn>tipoclie</th>
+      <th>tipocontrato</th>
+      <th>contnume</th>
+      <th>contcodi</th>
+      <th>pagodesbalance</th>
+      <th>contvers</th>
+      <th>contobje</th>
+      <th>coordcom</th>
+      <th>frecucont</th>
+      <th>modac</th>
+      <th>contfein</th>
+      <th>contfefi</th>
+      <th>contesta</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-contrat>
+    <tr [pSelectableRow]="contrat">
+      <td>{{contrat.contid}}</td>
+      <td>{{contrat.clprid}}</td>
+      <td>{{contrat.clientec}}</td>
+      <td>{{contrat.tipoclie}}</td>
+      <td>{{contrat.tipocontrato}}</td>
+      <td>{{contrat.contnume}}</td>
+      <td>{{contrat.contcodi}}</td>
+      <td>{{contrat.pagodesbalance}}</td>
+      <td>{{contrat.contvers}}</td>
+      <td>{{contrat.contobje}}</td>
+      <td>{{contrat.coordcom}}</td>
+      <td>{{contrat.frecucont}}</td>
+      <td>{{contrat.modac}}</td>
+      <td>{{contrat.contfein}}</td>
+      <td>{{contrat.contfefi}}</td>
+      <td>{{contrat.contesta}}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="summary">
+    <div class="p-d-flex p-ai-center p-jc-between">
+        In total there are {{contrats ? contrats.length : 0 }} contrats.
+    </div>
+  </ng-template>
+  <ng-template pTemplate="emptymessage">
+    <tr>
+        <td colspan="4">No customers found.</td>
+    </tr>
+  </ng-template>
+</p-table> -->
+
+<div #widget id="tabla" style="hyphens: 800px; width: 100%;" ></div>
